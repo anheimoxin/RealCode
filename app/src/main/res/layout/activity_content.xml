@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--滑动布局，加上左侧的滑动栏-->
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.programing.anheimoxin.realcode.ContentActivity">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <!--页面的展示的web页面-->
+        <WebView
+            android:id="@+id/content_webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <!--左侧的滑动栏-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start">
+
+        <!--导航的fragment，目前放了个web浏览器-->
+        <fragment
+            android:id="@+id/navigation"
+            android:name="com.programing.anheimoxin.realcode.NavigationFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+</android.support.v4.widget.DrawerLayout>

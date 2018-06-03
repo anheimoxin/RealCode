@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="BookStore" />
+    <version value="1" />
+    <list>
+        <mapping class="com.programing.anheimoxin.realcode.db.entity.Book" />
+        <mapping class="com.programing.anheimoxin.realcode.db.entity.Chapter" />
+        <mapping class="com.programing.anheimoxin.realcode.db.entity.DBVersion" />
+    </list>
+</litepal>
